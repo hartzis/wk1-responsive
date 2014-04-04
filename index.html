@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0,	maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>test responsive</title>
+	<style type="text/css">
+	
+	body {
+		margin: 0;
+		padding: 0;
+		font-size: 25px;
+		color: #000;
+	}
+	.container {
+		min-width: 200px;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	.container div {
+		width: 33%;
+		float: left;
+			}
+
+	.sub-div1 {background-color: #F00;}	.sub-div2 {background-color: #00F; font-size: 1.5rem;	}	.sub-div3 {	background-color: #0F0}
+
+	@media screen and (max-width: 550px) {
+		.container div {
+			width: 100%;
+			float: none;
+		}
+	}
+	@media screen and (max-width: 300px) {
+		body {
+			font-size: 15px;
+		}
+	}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="sub-div1">Hello world</div>
+		<div class="sub-div2">Also hello World</div>
+		<div class="sub-div3">Also hello World</div>
+	</div>
+</body>
+</html>
